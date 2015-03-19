@@ -17,3 +17,5 @@
 
 # ignoring Security... ;)
 .secret
+
+.vagrant
