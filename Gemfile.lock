@@ -1,3 +1,9 @@
+GIT
+  remote: git://github.com/sporkrb/spork.git
+  revision: 224df492657e617a0c93c0319e78f0eefee5b636
+  specs:
+    spork (1.0.0rc4)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -64,6 +70,11 @@ GEM
       guard (~> 2.1)
       guard-compat (~> 1.1)
       rspec (>= 2.99.0, < 4.0)
+    guard-spork (2.1.0)
+      childprocess (>= 0.2.3)
+      guard (~> 2.0)
+      guard-compat (~> 1.0)
+      spork (>= 0.8.4)
     hike (1.2.3)
     hitimes (1.2.2)
     i18n (0.7.0)
@@ -162,6 +173,9 @@ GEM
       websocket (~> 1.0.4)
     shellany (0.0.1)
     slop (3.6.0)
+    spork-rails (4.0.0)
+      rails (>= 3.0.0, < 5)
+      spork (>= 1.0rc0)
     sprockets (2.12.3)
       hike (~> 1.2)
       multi_json (~> 1.0)
@@ -194,8 +208,10 @@ PLATFORMS
 
 DEPENDENCIES
   capybara (>= 2.2.0)
+  childprocess
   coffee-rails (= 4.0.1)
   guard-rspec
+  guard-spork
   jbuilder (= 1.0.2)
   jquery-rails (= 3.0.4)
   pg (= 0.15.1)
@@ -205,5 +221,7 @@ DEPENDENCIES
   sass-rails (= 4.0.1)
   sdoc (= 0.3.20)
   selenium-webdriver (= 2.35.1)
+  spork!
+  spork-rails
   turbolinks (= 1.1.1)
   uglifier (= 2.1.1)

@@ -9,6 +9,10 @@ group :development, :test do
   #gem 'rspec-rails', '2.13.1'
   gem 'rspec-rails'
   gem 'guard-rspec'
+  gem 'spork-rails'
+  gem 'guard-spork'
+  gem 'childprocess'
+  gem 'spork', github: 'sporkrb/spork'
 end
 
 group :test do
