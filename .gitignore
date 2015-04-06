@@ -19,3 +19,5 @@
 .secret
 
 .vagrant
+.DS_Store
+.idea
