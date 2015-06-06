@@ -51,6 +51,8 @@ Spork.prefork do
 
     #config.raise_errors_for_deprecations!
     config.include Capybara::DSL
+    # URL Helpers
+    config.include Rails.application.routes.url_helpers
   end
 end
 
