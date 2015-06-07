@@ -16,7 +16,7 @@ development:
 test:
   adapter: postgresql
   encoding: utf8
-  database: railstutorial1
+  database: railstutorial1_test
   username: sample_app
   password: password
   host: 192.168.33.10
