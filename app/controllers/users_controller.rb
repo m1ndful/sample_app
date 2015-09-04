@@ -4,6 +4,7 @@ class UsersController < ApplicationController
   before_action :admin_user,      only: :destroy
 
   def new
+    #redirect_to(root_url) if signed_in?
     @user = User.new
   end
 
